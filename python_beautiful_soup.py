@@ -37,8 +37,6 @@ for week_number, _date in enumerate(weeks):
         if st.find('BestSellerBookListsConnection') > 0:
             
             # parsing data - deleting/transforming non-readable characters
-            # st = st.replace("’","'")
-            # st = st.replace('“','""')
             st = st.replace("window.__preloadedData = ","")
             st = st.replace(";","")
             st = st.replace("'","")
